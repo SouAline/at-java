@@ -8,7 +8,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 
+import javax.servlet.http.HttpSession;
+
+@SessionAttributes("user")
 @Controller
 public class AcessoController {
 
@@ -21,12 +26,25 @@ public class AcessoController {
 
     }
 
-    @PostMapping(value = "/login")
+    @GetMapping(value="/login")
+    public String telaHome(){
+        return "index";
+    }
+
+    @GetMapping(value="/logout")
+    public String logout(HttpSession session, SessionStatus status){
+        status.setComplete();
+        session.removeAttribute("user");
+        return  "redirect:/";
+    }
+
+    @PostMapping(value = "/home")
     public String login(Model model, @RequestParam String email, @RequestParam String senha) {
 
         Usuario usuario = usuarioService.validacao(email, senha);
 
         if (usuario != null) {
+            model.addAttribute("user", usuario);
             return "/index";
 
         } else {
@@ -40,6 +58,7 @@ public class AcessoController {
     public String criarUsuario() {
         return "/usuario/cadastro";
     }
+
 
     @PostMapping(value = "/usuario/cadastro")
     public String cadastrar(Model model, Usuario usuario) {
