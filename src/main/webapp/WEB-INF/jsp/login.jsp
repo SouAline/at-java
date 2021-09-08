@@ -14,22 +14,17 @@
 
 <div class="container">
     <c:if test="${not empty mensagem}">
-
-        <div class="alert alert-danger alert-dismissible">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close"></a>
-            ${mensagem}
+        <div class="alert alert-info alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" arial-label="close"></a>
+                ${mensagem}
         </div>
-
     </c:if>
 </div>
-
-<div class="sidenav">
-    <div class="login-main-text">
+<div class="container" style="margin-top:20px">
+    <div class="row">
+        <div class="col-md-4">
         <h3>Autenticação</h3>
-        <form action= "/login" method="post">
-
-            <div class="main">
-                <div class="col-md-6 col-sm-12">
+        <form action="/home" method="post">
                     <div class="login-form">
                         <div class="form-group">
                             <label>E-mail</label>
@@ -43,12 +38,10 @@
 
                         <button type="submit" class="btn btn black">Entrar</button>
                         <a href="/usuario/cadastro" type="submit" class="btn btn-info">Cadastrar</a>
-
                     </div>
-                </div>
-            </div>
         </form>
     </div>
+</div>
 </div>
 </body>
 </html>

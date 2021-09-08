@@ -10,13 +10,11 @@
 
 </head>
 <body>
-<div class="sidenav">
-    <div class="login-main-text">
+<div class="container" style="margin-top:20px">
+    <div class="row">
+        <div class="col-md-4">
         <h3>Cadastro</h3>
         <form action="/usuario/cadastro" method="post">
-
-            <div class="main">
-                <div class="col-md-6 col-sm-12">
                     <div class="login-form">
                         <div class="form-group">
                             <label>Nome</label>
@@ -35,10 +33,9 @@
 
                         <button type="submit" class="btn btn black">Cadastrar</button>
                     </div>
-                </div>
-            </div>
         </form>
     </div>
+</div>
 </div>
 </body>
 </html>
