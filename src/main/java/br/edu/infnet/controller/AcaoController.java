@@ -31,7 +31,7 @@ public class AcaoController {
     @PostMapping(value = "/acao/incluir")
     public String incluir(Model model, Acao acao){
         acaoService.incluir(acao);
-        model.addAttribute("mensagem", "A ação" + acao.getNome() + "da empresa" + acao.getEmpresa()+ " foi cadastrado com sucesso");
+        model.addAttribute("mensagem", "A ação " + acao.getNome() + " da empresa " + acao.getEmpresa()+ " foi cadastrado com sucesso");
         return telaLista(model);
     }
 
