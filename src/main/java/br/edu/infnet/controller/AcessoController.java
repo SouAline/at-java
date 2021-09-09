@@ -20,13 +20,20 @@ public class AcessoController {
     @Autowired
     private UsuarioService usuarioService;
 
-    @GetMapping(value = "/")
+    @GetMapping(value = "/login")
     public String telaLogin() {
         return "/login";
 
     }
 
-    @GetMapping(value="/login")
+    @GetMapping(value = "/")
+    public String telaInicial() {
+        return "/telaInicial";
+
+    }
+
+
+    @GetMapping(value="/home")
     public String telaHome(){
         return "index";
     }
@@ -38,14 +45,14 @@ public class AcessoController {
         return  "redirect:/";
     }
 
-    @PostMapping(value = "/home")
+    @PostMapping(value = "/login")
     public String login(Model model, @RequestParam String email, @RequestParam String senha) {
 
         Usuario usuario = usuarioService.validacao(email, senha);
 
         if (usuario != null) {
             model.addAttribute("user", usuario);
-            return "/index";
+            return "index";
 
         } else {
             model.addAttribute("mensagem", "Email e/ou senha inválida!");
