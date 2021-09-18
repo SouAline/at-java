@@ -29,7 +29,6 @@ public class AcessoController {
     @GetMapping(value = "/")
     public String telaInicial() {
         return "/telaInicial";
-
     }
 
 
