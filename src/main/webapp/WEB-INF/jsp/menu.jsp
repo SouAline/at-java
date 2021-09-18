@@ -6,7 +6,6 @@
       <a class="navbar-brand" href="#">RANKING</a>
     </div>
     <ul class="nav navbar-nav">
-        <li class="active"><a href="/login">HOME</a></li>
         <c:if test="${not empty user}">
           <li><a href="acao/cadastro">ACOES</a></li>
           <li><a href="#">FUNDO IMOBILIARIO</a></li>
