@@ -36,12 +36,12 @@
 
                     <div class="form-group">
                         <label>Valor de Compra</label>
-                        <input type="number" class="form-control" placeholder="R$ Compra" name="valor">
+                        <input type="number" step="0.01" class="form-control" placeholder="R$ Compra" name="valor">
                     </div>
 
                     <div class="form-group">
                         <label>Valor de Dividendo</label>
-                        <input type="number" class="form-control" placeholder="R$ Dividendo" name="dividendo">
+                        <input type="number" step="0.01" class="form-control" placeholder="R$ Dividendo" name="dividendo">
                     </div>
 
                     <div class="form-group">
