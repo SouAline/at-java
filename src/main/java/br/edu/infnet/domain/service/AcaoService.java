@@ -18,6 +18,7 @@ public class AcaoService {
     }
 
     public void incluir(Acao acao){
+
         acaoRepository.save(acao); //vai no repository pedir pra salvar no banco
     }
 
@@ -26,6 +27,7 @@ public class AcaoService {
     }
 
     public Acao obterPorId(Integer id){
+
         return acaoRepository.findById(id).orElse(null);
     }
 }
