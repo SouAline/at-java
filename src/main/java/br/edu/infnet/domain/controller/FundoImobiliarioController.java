@@ -18,7 +18,7 @@ public class FundoImobiliarioController {
     @GetMapping(value = "fundoImolibiario/lista")
     public String telaLista(Model model){
         model.addAttribute("fundoImobiliario", fundoImobiliarioService.obterLista());
-        return "fundoImobiliario/lista";
+        return "/fundoImobiliario/lista";
     }
 
     @GetMapping(value = "fundoImobiliario/cadastro")
@@ -26,7 +26,7 @@ public class FundoImobiliarioController {
         return "/fundoImobiliario/cadastro";
     }
 
-    @PostMapping(value = "fundoImobiliario/Incluir")
+    @PostMapping(value = "/fundoImobiliario/incluir")
     public String incluir(Model model, FundoImobiliario fundoImobiliario){
         fundoImobiliarioService.incluir(fundoImobiliario);
         model.addAttribute("mensagem", "O fundo imobiliário " + fundoImobiliario.getNome() + " foi cadastrado com sucesso!");
