@@ -8,8 +8,8 @@
     <ul class="nav navbar-nav">
         <c:if test="${not empty user}">
           <li><a href="acao/cadastro">ACOES</a></li>
-          <li><a href="#">FUNDO IMOBILIARIO</a></li>
-          <li><a href="#">TESOURO DIRETO</a></li>
+          <li><a href="fundoImobiliario/cadastro">FUNDO IMOBILIARIO</a></li>
+          <li><a href="tesouroDireto/cadastro">TESOURO DIRETO</a></li>
         </c:if>
     </ul>
     <ul class="nav navbar-nav navbar-right">

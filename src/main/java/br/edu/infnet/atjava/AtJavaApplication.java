@@ -1,6 +1,6 @@
 package br.edu.infnet.atjava;
 
-import br.edu.infnet.controller.AcessoController;
+import br.edu.infnet.domain.controller.AcessoController;
 import br.edu.infnet.domain.service.UsuarioService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
