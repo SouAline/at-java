@@ -46,14 +46,14 @@
             </thead>
             <tbody>
             <c:forEach var="ac" items="${acoes}">
-                <td>
+                <tr>
                 <td>${ac.id}</td>
                 <td>${ac.nome}</td>
                 <td>${ac.valor}</td>
+                <td>${ac.quantidade}</td>
                 <form action="/acao/${ac.id}/excluir" method="get">
                 <td><button class="btn btn-danger">Excluir</button></td>
                 </form>
-                </td>
                 </tr>
             </c:forEach>
             </tbody>
