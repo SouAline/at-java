@@ -42,7 +42,7 @@
 
                     <div class="form-group">
                         <label>Quantidade</label>
-                        <input type="number" class="form-control" placeholder="Digite a quantidade" name="quantidade">
+                        <input type="number" step="0.01" class="form-control" placeholder="Digite a quantidade" name="quantidade">
                     </div>
                     <button type="submit" class="btn btn black">Cadastrar</button>
                 </div>
