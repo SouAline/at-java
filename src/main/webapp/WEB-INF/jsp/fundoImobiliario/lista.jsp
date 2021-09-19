@@ -34,7 +34,7 @@
         </c:if>
 
 
-        <h4>Ações cadastradas: ${fundoImobiliario.size()}!!</h4>
+        <h4>FII cadastrados: ${fundoImobiliario.size()}!!</h4>
         <hr>
         <table class="table">
             <thead class="thead-light">
@@ -47,14 +47,14 @@
             </thead>
             <tbody>
             <c:forEach var="fundo" items="${fundoImobiliario}">
-                <td>
+                <tr>
                 <td>${fundo.id}</td>
                 <td>${fundo.nome}</td>
                 <td>${fundo.valor}</td>
+                <td>${fundo.quantidade}</td>
                 <form action="/fundoImobiliario/${fundo.id}/excluir" method="get">
                     <td><button class="btn btn-danger">Excluir</button></td>
                 </form>
-                </td>
                 </tr>
             </c:forEach>
             </tbody>
