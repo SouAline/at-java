@@ -17,32 +17,32 @@
 <div class="container" style="margin-top:20px">
     <div class="row">
         <div class="col-md-4">
-            <h3>Cadastro De Ativos</h3>
+            <h3>Cadastro De Fundo Imobiliario</h3>
             <form action="/fundoImobiliario/incluir" method="post">
                 <div class="login-form">
                     <div class="form-group">
                         <label>Nome Fundo Imobiliario</label>
-                        <input type="text" class="form-control" placeholder="Nome do ativo" name="nome">
+                        <input type="text" value="ALZR" class="form-control" placeholder="Nome do ativo" name="nome">
                     </div>
 
                     <div class="form-group">
                         <label>Empresa</label>
-                        <input type="text" class="form-control" placeholder="Empresa" name="empresa">
+                        <input type="text" value="ALIANZA TRUST RENDA" class="form-control" placeholder="Empresa" name="empresa">
                     </div>
 
                     <div class="form-group">
                         <label>Valor de Compra</label>
-                        <input type="number" step="0.01" class="form-control" placeholder="R$ Compra" name="valor">
+                        <input type="number" value="125,22" step="0.01" class="form-control" placeholder="R$ Compra" name="valor">
                     </div>
 
                     <div class="form-group">
                         <label>Valor de Dividendo</label>
-                        <input type="number" step="0.01" class="form-control" placeholder="R$ Dividendo" name="dividendo">
+                        <input type="number" step="0.01" value="0,85" class="form-control" placeholder="R$ Dividendo" name="dividendo">
                     </div>
 
                     <div class="form-group">
                         <label>Quantidade</label>
-                        <input type="number" step="0.01" class="form-control" placeholder="Digite a quantidade" name="quantidade">
+                        <input type="number" step="0.01" value="15" class="form-control" placeholder="Digite a quantidade" name="quantidade">
                     </div>
                     <button type="submit" class="btn btn black">Cadastrar</button>
                 </div>

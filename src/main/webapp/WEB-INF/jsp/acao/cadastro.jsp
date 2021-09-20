@@ -26,27 +26,27 @@
                 <div class="login-form">
                     <div class="form-group">
                         <label>Nome Ativo</label>
-                        <input type="text" class="form-control" placeholder="Nome do ativo" name="nome">
+                        <input type="text" value = "VVAR3" class="form-control" placeholder="Nome do ativo" name="nome">
                     </div>
 
                     <div class="form-group">
                         <label>Empresa</label>
-                        <input type="text" class="form-control" placeholder="Empresa" name="empresa">
+                        <input type="text" value = "Via Varejo" class="form-control" placeholder="Empresa" name="empresa">
                     </div>
 
                     <div class="form-group">
                         <label>Valor de Compra</label>
-                        <input type="number" step="0.01" class="form-control" placeholder="R$ Compra" name="valor">
+                        <input type="number" step="0.01" value = "15,00" class="form-control" placeholder="R$ Compra" name="valor">
                     </div>
 
                     <div class="form-group">
                         <label>Valor de Dividendo</label>
-                        <input type="number" step="0.01" class="form-control" placeholder="R$ Dividendo" name="dividendo">
+                        <input type="number" step="0.01" value = "0,23" class="form-control" placeholder="R$ Dividendo" name="dividendo">
                     </div>
 
                     <div class="form-group">
                         <label>Quantidade</label>
-                        <input type="text" class="form-control" placeholder="Digite a quantidade" name="quantidade">
+                        <input type="text" class="form-control" value = "150" placeholder="Digite a quantidade" name="quantidade">
                     </div>
                     <button type="submit" class="btn btn black">Cadastrar</button>
                 </div>

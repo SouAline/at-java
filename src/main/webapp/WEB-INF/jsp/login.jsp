@@ -34,12 +34,12 @@
                     <div class="login-form">
                         <div class="form-group">
                             <label>E-mail</label>
-                            <input type="text" class="form-control" placeholder="Digite seu e-mail" name="email">
+                            <input type="text" value = "ds.alinesouza@gmail.com" class="form-control" placeholder="Digite seu e-mail" name="email">
                         </div>
 
                         <div class="form-group">
                             <label>Senha</label>
-                            <input type="password" class="form-control" placeholder="Digite sua senha" name="senha">
+                            <input type="password" value = "123" class="form-control" placeholder="Digite sua senha" name="senha">
                             <br>
                             <button type="submit" class="btn btn black">Entrar</button>
                         </div>

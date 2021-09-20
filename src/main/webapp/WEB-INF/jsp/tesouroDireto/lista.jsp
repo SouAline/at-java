@@ -45,15 +45,14 @@
             </tr>
             </thead>
             <tbody>
-            <c:forEach var="tesouro" items="${acoes}">
-                <td>
+            <c:forEach var="tesouro" items="${tesouroDireto}">
+                <tr>
                 <td>${tesouro.id}</td>
                 <td>${tesouro.nome}</td>
                 <td>${tesouro.valor}</td>
                 <form action="/tesouroDireto/${tesouro.id}/excluir" method="get">
                     <td><button class="btn btn-danger">Excluir</button></td>
                 </form>
-                </td>
                 </tr>
             </c:forEach>
             </tbody>
