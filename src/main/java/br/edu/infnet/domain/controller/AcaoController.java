@@ -17,15 +17,17 @@ public class AcaoController {
 
     @GetMapping(value ="/acao/lista")
     public String telaLista(Model model) {
-
         model.addAttribute("acoes", acaoService.obterLista());
-
         return "acao/lista";
+    }
+    @GetMapping(value = "/cadastro")
+    public String cadastro(){
+        return telaCadastro();
     }
 
     @GetMapping(value = "/acao/cadastro")
     public String telaCadastro(){
-        return "acao/cadastro";
+        return "/acao/cadastro";
     }
 
     @PostMapping(value = "/acao/incluir")

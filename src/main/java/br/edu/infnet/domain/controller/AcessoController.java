@@ -31,6 +31,10 @@ public class AcessoController {
         return "/telaInicial";
     }
 
+    @GetMapping(value = "/telaInicial")
+    public String voltaInicial() {
+        return "/telaInicial";
+    }
 
     @GetMapping(value="/home")
     public String telaHome(){
