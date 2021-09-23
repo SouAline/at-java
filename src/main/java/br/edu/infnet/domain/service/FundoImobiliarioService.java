@@ -22,7 +22,8 @@ public class FundoImobiliarioService {
         fundoImobiliarioRepository.save(fundoImobiliario);
     }
 
-    public void excluir(Integer id){
+    public void excluir(Integer id)
+    {
         fundoImobiliarioRepository.deleteById(id);
     }
 
