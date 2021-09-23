@@ -14,9 +14,9 @@ public class EnderecoController {
     @Autowired
     private EnderecoService enderecoService;
 
-    @PostMapping(value="/buscaCep")
+    @PostMapping(value="/buscarCep")
     public String buscaCep(Model model, @RequestParam String cep){//clase auxiliar que pega as informações da tela e passa ao controller
-        model.addAttribute("endereco", enderecoService.buscaCep(cep));
+        model.addAttribute("endereco", enderecoService.buscarCep(cep));
         return "/usuario/cadastro";
     }
 
