@@ -20,6 +20,10 @@ public class FundoImobiliarioController {
         model.addAttribute("fundoImobiliario", fundoImobiliarioService.obterLista());
         return "/fundoImobiliario/lista";
     }
+    @GetMapping(value = "/cadastramento")
+    public String cadastro(){
+        return telacadastro();
+    }
 
     @GetMapping(value = "fundoImobiliario/cadastro")
     public String telacadastro(){
