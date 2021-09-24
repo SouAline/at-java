@@ -22,7 +22,7 @@ public class AcaoController {
     }
     @GetMapping(value = "/cadastro")
     public String cadastro(){
-        return telaCadastro();
+        return "/acao/lista";
     }
 
     @GetMapping(value = "/acao/cadastro")

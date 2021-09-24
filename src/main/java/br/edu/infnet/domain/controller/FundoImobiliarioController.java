@@ -22,7 +22,7 @@ public class FundoImobiliarioController {
     }
     @GetMapping(value = "/cadastramento")
     public String cadastro(){
-        return telacadastro();
+        return "/fundoImobiliario/lista";
     }
 
     @GetMapping(value = "fundoImobiliario/cadastro")

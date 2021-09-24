@@ -34,7 +34,7 @@ public class TesouroDiretoController {
     }
     @GetMapping(value = "cadastrar")
     public String cadastrar(){
-        return telaCadastro();
+        return "/tesouroDireto/lista";
     }
 
     @GetMapping(value = "/tesouroDireto/{id}/excluir")
