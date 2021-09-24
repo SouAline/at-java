@@ -10,6 +10,8 @@
           <li><a href="/cadastro">ACOES</a></li>
           <li><a href="/cadastramento">FUNDO IMOBILIARIO</a></li>
           <li><a href="/cadastrar">TESOURO DIRETO</a></li>
+            <li><a href="/ativo/lista">ATIVOS</a></li>
+            <li><a href="/simulacao/lista">SIMULACAO</a></li>
         </c:if>
     </ul>
 
