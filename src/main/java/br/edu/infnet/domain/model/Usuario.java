@@ -14,8 +14,17 @@ public class Usuario {
     private String nome;
     private String email;
     private String senha;
+    private String endereco;
 
     public Usuario() {
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
 
     public Integer getId() {
