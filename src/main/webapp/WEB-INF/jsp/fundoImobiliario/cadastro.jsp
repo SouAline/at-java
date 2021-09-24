@@ -21,7 +21,7 @@
             <form action="/fundoImobiliario/incluir" method="post">
                 <div class="login-form">
                     <div class="form-group">
-                        <label>Nome Fundo Imobiliario</label>
+                        <label>Fundo Imobiliario</label>
                         <input type="text" value="ALZR" class="form-control" placeholder="Nome do ativo" name="nome">
                     </div>
 

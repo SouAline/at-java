@@ -15,7 +15,6 @@
 <br>
 <br>
 <br>
-<hr>
 <div class="container">
     <div class="container">
         <form action="/tesouroDireto/cadastro" method="get">
@@ -33,7 +32,7 @@
         </c:if>
 
 
-        <h4>Ações cadastradas: ${tesouroDireto.size()}!!</h4>
+        <h4>Tesouro direto cadastrados: ${tesouroDireto.size()}!!</h4>
         <hr>
         <table class="table">
             <thead class="thead-light">
