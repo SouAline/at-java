@@ -2,10 +2,12 @@ package br.edu.infnet.domain.model;
 
 import javax.persistence.*;
 
+import java.util.List;
+
 import static javax.persistence.InheritanceType.JOINED;
 
 @Entity
-@Inheritance(strategy = JOINED)//??
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Ativo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,6 +15,11 @@ public abstract class Ativo {
     protected String nome;
     protected float valor;
     protected int quantidade;
+    @ManyToOne
+    @JoinColumn(name = "idUsuario")
+    private Usuario usuario;
+    @ManyToMany(mappedBy = "ativos")
+    private List<Simulacao> simulacaos;
 
     public Ativo() {
     }
