@@ -15,15 +15,18 @@
 <br>
 <br>
 
+<div class="jumbotron text-center">
+    <h1>CADASTRO DE USUARIO</h1>
+</div>
 <div class="container" style="margin-top:20px">
     <div class="row">
         <div class="col-md-4">
             <h3>Cadastro</h3>
             <form action="/buscarCep" method="post">
                 <div class="row">
-                <input type="text" class="form-control" placeholder="Cep" name="cep">
-                <br>
-                <button type="submit" class="btn btn-primary">Buscar</button>
+                    <input type="text" class="form-control" placeholder="Cep" name="cep">
+                    <br>
+                    <button type="submit" class="btn btn-primary">Buscar</button>
                 </div>
             </form>
             <br>
